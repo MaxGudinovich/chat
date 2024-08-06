@@ -1,0 +1,11 @@
+<div class="chats-container">
+  <ul>
+    <li
+      class="chats-container-list"
+      *ngFor="let chat of chats"
+      (click)="handleGoToChat(chat)"
+    >
+      {{ chat.name }}
+    </li>
+  </ul>
+</div>

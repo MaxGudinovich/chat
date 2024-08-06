@@ -1,0 +1,11 @@
+<div class="input-group">
+  <label class="primaryLabel">
+    {{ label }}
+    <input
+      class="primaryInput"
+      [type]="type"
+      [value]="value"
+      (input)="onInputChange($event)"
+    />
+  </label>
+</div>

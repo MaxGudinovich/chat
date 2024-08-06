@@ -1,0 +1,25 @@
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  padding: 50px 20px;
+  width: 100%;
+  height: 100vh;
+}
+
+.chats-container {
+  display: flex;
+  justify-content: center;
+  background-color: lightblue;
+}
+
+.active-chat-container {
+  display: flex;
+  justify-content: center;
+  background-color: lightgray;
+}
+
+.user-info-container {
+  display: flex;
+  justify-content: center;
+  background-color: lightcoral;
+}

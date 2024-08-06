@@ -1,0 +1,20 @@
+<div class="active-chat-container">
+  <div class="chat">{{ chatName }}</div>
+  <div class="user-info-container">
+    <input
+      type="text"
+      [(ngModel)]="username"
+      (ngModelChange)="onSearch($event)"
+      placeholder="Enter user username"
+    />
+    <ul>
+      <li
+        class="user-from-search"
+        *ngFor="let user of filteredUsers"
+        (click)="addUserToRoom(user)"
+      >
+        {{ user.username }}
+      </li>
+    </ul>
+  </div>
+</div>

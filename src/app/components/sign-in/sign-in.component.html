@@ -1,0 +1,11 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit($event)">
+  <app-primary-input label="Username" type="text" formControlName="username">
+  </app-primary-input>
+  <app-primary-input
+    label="Password"
+    type="password"
+    formControlName="password"
+  >
+  </app-primary-input>
+  <app-primary-button type="submit">Sign in</app-primary-button>
+</form>
